@@ -110,8 +110,8 @@ h2{
 }
 
 body {
-    background-color: #f0f8ff; /* 適合的整體背景顏色，淺藍色 */
-    color: black; /* 字體顏色 */
+    background-color: #f0f8ff; 
+    color: black; 
 }
 
 footer {
@@ -173,10 +173,10 @@ footer {
 }
 
 .backs-button {
-    position: fixed; 
+    position: fixed; /* 固定位置 */
     left: 50%; /* 水平居中 */
-    margin-top: 15vh;
-    transform: translateX(-50%); /* 調整位置使其完全居中 */
+    bottom: 70px; /* 距离底部50px */
+    transform: translateX(-50%); /* 调整位置使其完全水平居中 */
     background-color: #add8e6;
     color: black;
     text-decoration: none; 
