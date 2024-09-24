@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f0f8ff; 
+    color: black; 
+}
+
+header{
+    background-color: #333;;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+    color: white;
+    position:absolute;
+    left:3vw;
+    top:0;
+    line-height: 80px;
+    font-family: cursive;
+    font-size: 3vw;
+}
+
+header nav ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+
+header nav li{
+    display: inline-block;
+    margin-right: 2vw;
+    position: relative;
+}
+
+header nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+header nav ul li ul {
+    display: none;
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    background: #333; 
+    padding: 0; 
+    z-index: 5; 
+}
+
+header nav ul li:hover ul {
+    display: block; 
+}
+
+header nav ul li ul li {
+    width: 15vw; 
+}
+
+header nav ul li ul li a {
+    display: block; 
+    padding: 10px;
+    color: white; 
+    text-decoration: none; 
+    background: #333; 
+}
+
+header nav ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+h2{
+    color: black;
+}
+
+.navigation-section {
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.headline{
+    background-color: white;
+    color: white;
+    height: 40vh;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headline h2{
+    font-size: 60px;
+    margin-top: 10vh;
+}
+
+body {
+    background-color: #f0f8ff; 
+    color: black; 
+}
+
+footer {
+    background-color: #333;
+    color: gray;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+
+
+
+
+
+
+
