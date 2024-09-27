@@ -4,8 +4,9 @@
 }
 
 body {
-    background-color: #f0f8ff; 
+    background-color: white;
     color: black; 
+    font-family:serif;
 }
 
 header{
@@ -92,10 +93,11 @@ h2{
 }
 
 .headline{
+    /*background-color: rgb(209, 205, 205);*/
     background-color: white;
     color: white;
     height: 40vh;
-    background-image: url("images/background.jpg");
+    /*background-image: url("images/background.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,11 +109,6 @@ h2{
 .headline h2{
     font-size: 60px;
     margin-top: 10vh;
-}
-
-body {
-    background-color: #f0f8ff; 
-    color: black; 
 }
 
 footer {
@@ -127,10 +124,3 @@ footer {
     left: 0; 
     right: 0;
 }
-
-
-
-
-
-
-
