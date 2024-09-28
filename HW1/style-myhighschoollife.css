@@ -256,36 +256,33 @@ footer {
     line-height: 2em;
 }
 
-/* Section 的基本设置 */
+/*carousel*/
 .photo-carousel {
-    width: 100%;  /* 使其占满屏幕 */
-    overflow: hidden;  /* 隐藏超出部分 */
+    width: 100%;  
+    overflow: hidden;
     position: relative;
-    height: 200px; /* 设置整体高度限制 */
+    height: 200px; 
 }
 
-/* Carousel track 设置，使图片水平排列 */
 .carousel-track {
-    display: flex;  /* 图片水平排列 */
-    width: calc(100% * 2); /* 设定为两倍的宽度，以便两组图片展示 */
-    animation: scroll 28s linear infinite;  /* 无限滚动的动画 */
+    display: flex;  
+    width: calc(100% * 2); 
+    animation: scroll 28s linear infinite; 
 }
 
-/* 使所有图片的高度和宽度保持一致 */
 .carousel-track img {
-    height: 100%; /* 图片高度为容器高度 */
-    width: auto; /* 宽度自适应 */
-    max-width: 300px; /* 设置最大宽度，限制图片大小 */
-    flex: 0 0 auto; /* 让图片按其内容大小显示 */
-    margin-right: 10px; /* 图片之间的间距 */
+    height: 100%;
+    width: auto; 
+    max-width: 300px;
+    flex: 0 0 auto; 
+    margin-right: 10px; 
 }
 
-/* 关键帧动画，图片从右向左移动 */
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* 向左移动至第一个完整循环 */
+        transform: translateX(-50%);
     }
 }
