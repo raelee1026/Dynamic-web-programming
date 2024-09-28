@@ -14,6 +14,7 @@ header{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 h1{
@@ -97,7 +98,7 @@ h2{
     background-color: white;
     color: white;
     height: 40vh;
-    /*background-image: url("images/background.jpg");*/
+    background-image: url("images/high-school_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -106,11 +107,12 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
 .headline h2{
     font-size: 60px;
     margin-top: 10vh;
+    color: white;
 }
-
 
 footer {
     background-color: #333;
@@ -126,20 +128,74 @@ footer {
     right: 0;
 }
 
-.school_intro{
-    display: flex;
-    margin: 20px 0 20px 0; 
+.spacer {
+    height: 60px;  
 }
 
-.school_intro img{
-    width: 40%;
-    /*border-radius: 20px;*/
+.continue {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    padding: 230px;
+    overflow: hidden;
+}
+
+.images img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 250px;  
+    height: 250px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;  
+    animation: waveMove 8s infinite ease-in-out;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translate(-10vw, 0) rotate(0deg); /* 从左边开始，不旋转 */
+    }
+    15% {
+        transform: translate(25vw, -200px) rotate(90deg); /* 向右上角移动，并旋转90度 */
+    }
+    30% {
+        transform: translate(50vw, 25px) rotate(180deg); /* 向右下角移动，旋转180度 */
+    }
+    45% {
+        transform: translate(75vw, -200px) rotate(270deg); /* 再向右上角移动，旋转270度 */
+    }
+    60% {
+        transform: translate(100vw, 25px) rotate(360deg); /* 到达最右边，完成360度旋转 */
+    }
+    75% {
+        transform: translate(75vw, -200px) rotate(180deg); /* 开始从右往左反向移动 */
+    }
+    85% {
+        transform: translate(45vw, 25px) rotate(270deg); /* 向左上角移动，继续旋转 */
+    }
+    100% {
+        transform: translate(-10vw, -200px) rotate(360deg); /* 回到最左边，完成旋转 */
+    }
+}
+
+
+/*學校photo*/
+.school_photo{
+    display: flex;
+    margin: 20px 0 20px 0; 
+    background-color: rgb(225,225,225);
+    padding: 120px;
+}
+
+.school_photo img{
+    width: 50%;
+    border-radius: 20px;
     margin: 0 auto;
 }
 
 .intro_words{
     width:50%;
-    background-color: white;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -156,10 +212,98 @@ footer {
     line-height: 2em;
 }
 
-.google-map {
-    height: 70vh; 
-    margin: 50px 0 100px 0; 
+.school_map{
+    padding: 80px; 
+    background-color: rgb(225,225,225);  
 }
+
+.map_header{
+    margin-bottom: 10px;  
+    font-size: 2em;
+}
+
+.google_map {
+    height: 70vh; 
+    margin: 10px 10px 80px 10px;
+}
+
+/* School Introduction Section */
+.school_introduction {
+    padding: 50px;
+    margin: 60px auto; /* 增加上下间隔 */
+    max-width: 1000px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.school_introduction h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.school_introduction p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* School Motto Section */
+.school_song {
+    padding: 50px;
+    margin: 60px auto; /* 增加上下间隔 */
+    max-width: 800px;
+    background-color: #fffbe7;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.school_song h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e74c3c;
+}
+
+.school_song p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    padding-left: 20px;
+}
+
+.school_song strong {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+/* School Motto Section */
+.school_motto {
+    padding: 50px;
+    margin: 60px auto; /* 增加上下间隔 */
+    max-width: 600px;
+    background-color: #eef1f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.school_motto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+.school_motto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
