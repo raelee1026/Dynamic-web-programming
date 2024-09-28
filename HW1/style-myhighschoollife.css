@@ -14,6 +14,7 @@ header{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 h1{
@@ -97,7 +98,7 @@ h2{
     background-color: white;
     color: white;
     height: 40vh;
-    /*background-image: url("images/background.jpg");*/
+    background-image: url("images/high-school_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -106,9 +107,11 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
 .headline h2{
     font-size: 60px;
     margin-top: 10vh;
+    color: white;
 }
 
 footer {
@@ -123,4 +126,166 @@ footer {
     bottom: 0; 
     left: 0; 
     right: 0;
+}
+
+.spacer {
+    height: 60px;  
+}
+
+/*中間插畫*/
+.continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 120px;
+}
+
+.continue blockquote {
+    flex: 1;
+    text-align: left;
+    font-size: 5em;
+    padding-right: 20px; 
+}
+
+.images img {
+    width: 200px; 
+    height: 200px; 
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+.images img:nth-child(1) {
+    animation-delay: 0s; 
+}
+
+.images img:nth-child(2) {
+    animation-delay: 1.5s; 
+}
+
+.images img:nth-child(3) {
+    animation-delay: 0s; 
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-100px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/*主要內容*/
+.sub-interest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;  
+    background-color: rgb(224, 225, 225);
+}
+
+.sub-interest-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;  
+    background-color: rgb(255, 255, 255);
+}
+
+.slideshow {
+    position: relative;
+    width: 40vw;  
+    height: 70vh;
+    padding: 20px; 
+    box-sizing: border-box;  
+}
+
+.slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 20px; 
+    animation: slideshow 12s infinite;
+}
+
+.slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.slideshow img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    25% { opacity: 1; }
+    33% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.info{
+    width:50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.info p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2em;
+}
+
+/* Section 的基本设置 */
+.photo-carousel {
+    width: 100%;  /* 使其占满屏幕 */
+    overflow: hidden;  /* 隐藏超出部分 */
+    position: relative;
+    height: 200px; /* 设置整体高度限制 */
+}
+
+/* Carousel track 设置，使图片水平排列 */
+.carousel-track {
+    display: flex;  /* 图片水平排列 */
+    width: calc(100% * 2); /* 设定为两倍的宽度，以便两组图片展示 */
+    animation: scroll 28s linear infinite;  /* 无限滚动的动画 */
+}
+
+/* 使所有图片的高度和宽度保持一致 */
+.carousel-track img {
+    height: 100%; /* 图片高度为容器高度 */
+    width: auto; /* 宽度自适应 */
+    max-width: 300px; /* 设置最大宽度，限制图片大小 */
+    flex: 0 0 auto; /* 让图片按其内容大小显示 */
+    margin-right: 10px; /* 图片之间的间距 */
+}
+
+/* 关键帧动画，图片从右向左移动 */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* 向左移动至第一个完整循环 */
+    }
 }

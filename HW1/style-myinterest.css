@@ -136,44 +136,44 @@ footer {
 .continue {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* 左右分布 */
+    justify-content: space-between; 
     padding: 120px;
 }
 
 .continue blockquote {
-    flex: 1; /* 占据左侧剩余空间 */
+    flex: 1;
     text-align: left;
     font-size: 5em;
-    padding-right: 20px; /* 给右边的图片留空间 */
+    padding-right: 20px; 
 }
 
 .images img {
-    width: 200px; /* 图片的宽度 */
-    height: 200px; /* 图片的高度 */
+    width: 200px; 
+    height: 200px; 
     animation: moveUpDown 3s ease-in-out infinite;
 }
 
 .images img:nth-child(1) {
-    animation-delay: 0s; /* 第一个图片的动画立即开始 */
+    animation-delay: 0s; 
 }
 
 .images img:nth-child(2) {
-    animation-delay: 1.5s; /* 第二个图片的动画延迟 0.5 秒 */
+    animation-delay: 1.5s; 
 }
 
 .images img:nth-child(3) {
-    animation-delay: 0s; /* 第三个图片的动画延迟 1 秒 */
+    animation-delay: 0s; 
 }
 
 @keyframes moveUpDown {
     0% {
-        transform: translateY(0); /* 初始位置 */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-100px); /* 向上移动 10px */
+        transform: translateY(-100px); 
     }
     100% {
-        transform: translateY(0); /* 返回初始位置 */
+        transform: translateY(0);
     }
 }
 
@@ -198,7 +198,7 @@ footer {
 .slideshow {
     position: relative;
     width: 40vw;  
-    height: 40vh;
+    height: 45vh;
     padding: 20px; 
     box-sizing: border-box;  
 }
