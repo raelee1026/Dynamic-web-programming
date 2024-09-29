@@ -157,7 +157,6 @@ footer {
     color: #555;
 }
 
-/* Section 2: 大一上修课程的 Section */
 .semester{
     padding: 120px;
     background-color: #ffffff;
@@ -185,7 +184,6 @@ footer {
     display: none;
 }
 
-/* 课程标题样式 */
 .course-header {
     display: flex;
     justify-content: space-between;
@@ -201,20 +199,17 @@ footer {
     background-color: #e0e0e0;
 }
 
-/* 使用伪元素添加向下箭头 */
 .course-header::after {
-    content: '▼'; /* 向下箭头符号 */
+    content: '▼'; 
     font-size: 14px;
     transition: transform 0.3s ease;
     color: #888;
 }
 
-/* 当课程展开时，箭头变为向上 */
 input[type="checkbox"]:checked + .course-header::after {
-    transform: rotate(180deg); /* 翻转箭头 */
+    transform: rotate(180deg); 
 }
 
-/* 课程内容样式 */
 .course-content {
     max-height: 0;
     overflow: hidden;
@@ -224,7 +219,7 @@ input[type="checkbox"]:checked + .course-header::after {
 }
 
 input[type="checkbox"]:checked + .course-header + .course-content {
-    max-height: 200px; /* 展开的最大高度 */
+    max-height: 200px; 
     padding: 15px;
 }
 
