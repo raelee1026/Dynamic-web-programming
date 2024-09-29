@@ -167,16 +167,16 @@ footer {
 
 .introduction p {
     font-size: 1vw;
-    margin: 10px 0; /* 段落上下邊距 */
-    max-width: 800px; /* 可調整的最大寬度 */
-    text-align: left; /* 文字居中 */
+    margin: 10px 0; 
+    max-width: 800px; 
+    text-align: left;
 }
 
 .backs-button {
-    position: fixed; /* 固定位置 */
-    left: 50%; /* 水平居中 */
-    bottom: 70px; /* 距离底部50px */
-    transform: translateX(-50%); /* 调整位置使其完全水平居中 */
+    position: fixed;
+    left: 50%; 
+    bottom: 70px; 
+    transform: translateX(-50%);
     background-color: #add8e6;
     color: black;
     text-decoration: none; 
