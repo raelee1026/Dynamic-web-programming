@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mycourseinfo-ch</title>
     <link rel="stylesheet" href="style-mycourseinfo.css">
-    <link rel="stylesheet" href="style-myhighschool.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
@@ -20,14 +19,14 @@
             <li><a href="sitemap-ch.html">網站導覽</a></li>
             <li><a href="#">關於我</a>
                 <ul>
+                    <li><a href="myintro-ch.html">自我介紹</a></li>
                     <li><a href="myinterest-ch.html">我的興趣</a></li>
-                    <li><a href="myexperience-ch.html">我的經歷</a></li>
                 </ul>
             </li>
             <li><a href="#">我的系所</a>
                 <ul>
                     <li><a href="mydepartment-ch.html">系所資訊</a></li>
-                    <li><a href="mycourseinfo-ch.html">課程介紹</a></li>
+                    <li><a href="mycourseinfo-ch.html">修課紀錄</a></li>
                 </ul>
             </li>
             <li><a href="#">我的高中</a>
@@ -47,7 +46,222 @@
             <h2>課 程 介 紹</h2>
         </section>
 
+        <section class="credit-summary">
+            <h2>學分總結</h2>
+            <div>
+                <p>已修學分：46</p>
+                <p>本學期修習學分：23</p>
+            </div>
+        </section>
 
+        <section class="semester">
+            <h2>大一上修課紀錄</h2>
+            <div class="course">
+                <input type="checkbox" id="course1">
+                <label class="course-header" for="course1">
+                    <h3>微積分甲(一)</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：4 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這門課程讓我學了微積分的基本知識，是大一上loading最重的一堂課之一。因為全部都是考試配分，因此花了很多時間在準備。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course2">
+                <label class="course-header" for="course2">
+                    <h3>物理(一)</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：4 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這門課就像是物裡的概論，和其他老師不同的是每個單元都是看影片快速帶過（因為下學期是玄學啊）。每次小考都是去聽老師講脫口秀，還蠻有趣的。期中考、期末考把考古背熟都可以拿到一定的分數。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course3">
+                <label class="course-header" for="course3">
+                    <h3>計算機概論與程式設計</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這門課是大一上最重要的課之一，為我的程式打下很重要的基礎，每週都花一定的時間在寫作業及練習上，不過因為程式能力沒有很好，所以期末考得很差，拿了一個整個大一的最低分。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course4">
+                <label class="course-header" for="course4">
+                    <h3>線性代數</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這門課最特別的是期末報告，因為大一都不熟就找了不認識的人分組，不過期末報告很有趣可以看到大家不同的創意，每組都很厲害。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course5">
+                <label class="course-header" for="course5">
+                    <h3>計算機網路概論</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：選修</p>
+                    <p>課程心得：這門課是選修課，在大一時想挑戰自我，因此選了一門看起來比較適合的選修。整體來說，老師上的很好考試也不會太難，修課內容在之後的課堂也常提起，是很好的修課體驗。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course6">
+                <label class="course-header" for="course6">
+                    <h3>留學英文</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：2 學分</p>
+                    <p>類別：語言與溝通-英文</p>
+                    <p>課程心得：很喜歡這門課，除了可以學到一些留學英文的知識、訊息，loading不重，每週練練英文也很好。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course7">
+                <label class="course-header" for="course7">
+                    <h3>法國社會文化史</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：2 學分</p>
+                    <p>類別：領域課程-個人、社會與文化</p>
+                    <p>課程心得：很喜歡這門課，學到了一些法國文化故事，課堂中的電影和老師介紹的歷史都很有趣。</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="semester">
+            <h2>大一下修課紀錄</h2>
+            <div class="course">
+                <input type="checkbox" id="course8">
+                <label class="course-header" for="course8">
+                    <h3>微積分甲(二)</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：4 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：基本上和大一上差不多，只是內容比較困難，因為已經沒有學過的內容了。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course9">
+                <label class="course-header" for="course9">
+                    <h3>物理(二)</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：4 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：就是玄學很難懂，都在背題目。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course10">
+                <label class="course-header" for="course10">
+                    <h3>離散數學</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這門課就是離散的基本概論，每個單元都介紹，但沒有教的太深，不過我覺得期中期末題目很多，要寫很快。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course11">
+                <label class="course-header" for="course11">
+                    <h3>資料結構與物件導向程式設計</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這門課最特別的就是期中報告，要寫一個 Dungeon 的文字遊戲，還記得期限那一天整天都在趕報告手沒有停過，不過做完後很有成就感，是大學以來第一個獨立完成的 project 。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course12">
+                <label class="course-header" for="course12">
+                    <h3>數位電路設計</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：必修</p>
+                    <p>課程心得：這是一門偏硬體的課，沒有寫程式都在學基本概念，期中前的課程較簡單，期中後難度提升不少。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course13">
+                <label class="course-header" for="course13">
+                    <h3>學術英文口語發表</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：語言與溝通-英文</p>
+                    <p>課程心得：雖然這堂課也英文來說 loading 非常重，每隔兩三週就會要報告，不過也很好的讓我維持了英語口說的能力，自己非常喜歡這樣的課程。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course14">
+                <label class="course-header" for="course14">
+                    <h3>西班牙文(一)</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：3 學分</p>
+                    <p>類別：語言與溝通-第二外語</p>
+                    <p>課程心得：沒什麼壓力和 loading 的一堂課，就是快樂學西文。</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="semester">
+            <h2>暑期修課紀錄</h2>
+            <div class="course">
+                <input type="checkbox" id="course15">
+                <label class="course-header" for="course15">
+                    <h3>學會學：學習之道</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：2 學分</p>
+                    <p>類別：領域課程-個人、社會與文化</p>
+                    <p>課程心得：期末作業可自由發揮，只要跟課堂相關的主題都可以發想。這門課是可以學到如何學習，以及啟發一些自己對於學習習慣的反思。</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <input type="checkbox" id="course16">
+                <label class="course-header" for="course16">
+                    <h3>楚漢相爭之職場競爭力</h3>
+                </label>
+                <div class="course-content">
+                    <p>學分：2 學分</p>
+                    <p>類別：領域課程-個人、社會與文化</p>
+                    <p>課程心得：這門課程可以學到很多有用職場知識的，又不會有太重的課業壓力的好課。</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        
+
+        <div class="spacer"></div>
 
 
     </main>
