@@ -1,0 +1,230 @@
+/*112550003 李昀祐 第一次作業 9/26 112550003 Yun-Yu, Lee The First Homework 9/26*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    color: black; 
+    font-family:serif;
+}
+
+header{
+    background-color: #333;;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+h1{
+    color: white;
+    position:absolute;
+    left:3vw;
+    top:0;
+    line-height: 80px;
+    font-family: cursive;
+    font-size: 3vw;
+}
+
+header nav ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+
+header nav li{
+    display: inline-block;
+    margin-right: 2vw;
+    position: relative;
+}
+
+header nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+header nav ul li ul {
+    display: none;
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    background: #333; 
+    padding: 0; 
+    z-index: 5; 
+}
+
+header nav ul li:hover ul {
+    display: block; 
+}
+
+header nav ul li ul li {
+    width: 15vw; 
+}
+
+header nav ul li ul li a {
+    display: block; 
+    padding: 10px;
+    color: white; 
+    text-decoration: none; 
+    background: #333; 
+}
+
+header nav ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+h2{
+    color: black;
+}
+
+.navigation-section {
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.headline{
+    /*background-color: rgb(209, 205, 205);*/
+    background-color: white;
+    color: white;
+    height: 40vh;
+    background-image: url("images/nycu_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline h2 {
+    font-size: 60px;
+    margin-top: 10vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+footer {
+    background-color: #333;
+    color: gray;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+
+.spacer {
+    height: 60px;  
+}
+
+/*學分總結*/
+.credit-summary {
+    padding: 50px;
+    max-width: 800px;
+    margin: 120px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-summary h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+}
+
+.credit-summary div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.semester{
+    padding: 120px;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.semester h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    color: #555;
+}
+
+.course {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.course input[type="checkbox"] {
+    display: none;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.course-header:hover {
+    background-color: #e0e0e0;
+}
+
+.course-header::after {
+    content: '▼'; 
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: #888;
+}
+
+input[type="checkbox"]:checked + .course-header::after {
+    transform: rotate(180deg); 
+}
+
+.course-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked + .course-header + .course-content {
+    max-height: 200px; 
+    padding: 15px;
+}
+
+.course-content p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}

@@ -1,0 +1,327 @@
+/*112550003 李昀祐 第一次作業 9/26 112550003 Yun-Yu, Lee The First Homework 9/26*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    color: black; 
+    font-family:serif;
+}
+
+header{
+    background-color: #333;;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+h1{
+    color: white;
+    position:absolute;
+    left:3vw;
+    top:0;
+    line-height: 80px;
+    font-family: cursive;
+    font-size: 3vw;
+}
+
+header nav ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+
+header nav li{
+    display: inline-block;
+    margin-right: 2vw;
+    position: relative;
+}
+
+header nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+header nav ul li ul {
+    display: none;
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    background: #333; 
+    padding: 0; 
+    z-index: 5; 
+}
+
+header nav ul li:hover ul {
+    display: block; 
+}
+
+header nav ul li ul li {
+    width: 15vw; 
+}
+
+header nav ul li ul li a {
+    display: block; 
+    padding: 10px;
+    color: white; 
+    text-decoration: none; 
+    background: #333; 
+}
+
+header nav ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+h2{
+    color: black;
+}
+
+.navigation-section {
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.headline{
+    /*background-color: rgb(209, 205, 205);*/
+    background-color: white;
+    color: white;
+    height: 40vh;
+    background-image: url("images/pokemon_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline h2{
+    font-size: 60px;
+    margin-top: 10vh;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: gray;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+
+.spacer {
+    height: 60px;  
+}
+
+/*中間插畫*/
+.continue {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 120px;
+}
+
+.images img {
+    width: 180px;
+    height: 180px; 
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+.images img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.images img:nth-child(2) {
+    animation-delay: 0.5s; 
+}
+
+.images img:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.images img:nth-child(4) {
+    animation-delay: 1.5s; 
+}
+
+.images img:nth-child(5) {
+    animation-delay: 2s; 
+}
+
+.images img:nth-child(6) {
+    animation-delay: 2.5s; 
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-100px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+/*基本介紹*/
+.basic-intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+    padding: 120px;  
+    background-color: rgb(224, 225, 225);  
+    text-align: left;
+}
+
+.basic-intro img {
+    width: 35%;  
+    height: auto;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+.basic-intro .info {
+    width: 45%; 
+    padding-left: 150px;  
+    display: block;
+    flex-direction: column; 
+    justify-content: flex-start;  
+    align-items: flex-start; 
+    text-align: left;
+}
+
+.basic-intro h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    text-align: left; 
+}
+
+.basic-intro p {
+    font-size: 1.6em;
+    line-height: 1.6;
+    text-align: left;  
+    margin: 0;  
+    width: 100%; 
+}
+
+/*生日星座血型*/
+.more-intro {
+    padding: 120px; 
+    background-color: #f9f9f9;  
+}
+
+.more-intro-header {
+    margin-bottom: 50px;  
+    font-size: 2.5em;
+}
+
+.more-intro-content {
+    display: flex; 
+    justify-content: space-between;  
+}
+
+.card {
+    width: 350px;  
+    height: 350px;  
+    perspective: 1000px; 
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;  
+    transform-style: preserve-3d;  
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);  
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;  
+    border-radius: 10px;  
+}
+
+.card-front {
+    background-color: #fff;  
+    font-size: 2.5em;
+}
+
+.card-back {
+    background-color: #fff;  
+    transform: rotateY(180deg);  
+}
+
+.card-back img {
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px; 
+}
+
+/*聯繫資訊*/
+.contact-info {
+    background-color: rgb(224, 225, 225);
+    text-align: center;
+    padding: 170px;
+}
+
+.contact-info h2 {
+    font-size: 4em;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;   
+    gap: 50px;                 
+}
+
+.social-links a {
+    display: inline-block;
+    width: 150px;               
+    height: 150px;
+    border-radius: 50%;    
+    overflow: hidden;
+    transition: transform 0.3s ease;  
+}
+
+.social-links a:hover {
+    transform: scale(1.2);  
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+    border-radius: 50%;        
+}
