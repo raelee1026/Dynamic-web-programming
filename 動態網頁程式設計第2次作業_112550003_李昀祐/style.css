@@ -1,0 +1,60 @@
+img {
+    width: 50px;   /* 設定圖片的寬度 */
+    height: 50px;  /* 設定圖片的高度 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#input-section {
+    margin: 20px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.number-input {
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#number-images img {
+    width: 50px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* div {
+    border: 1px solid #ddd;
+    padding: 5px;
+    min-height: 30px; /* 確保 div 有最小高度 
+} */

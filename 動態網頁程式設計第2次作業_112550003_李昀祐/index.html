@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2_112550003_李昀祐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Homework 2 - Number Visualization</h1>
+
+    <!-- Input Section -->
+    <div id="input-section">
+        <label>Enter 8 numbers:</label>
+        <div class="input-row">
+            <input type="text" class="number-input" id="num1" maxlength="3" />
+            <input type="text" class="number-input" id="num2" maxlength="3" />
+            <input type="text" class="number-input" id="num3" maxlength="3" />
+            <input type="text" class="number-input" id="num4" maxlength="3" />
+            <input type="text" class="number-input" id="num5" maxlength="3" />
+            <input type="text" class="number-input" id="num6" maxlength="3" />
+            <input type="text" class="number-input" id="num7" maxlength="3" />
+            <input type="text" class="number-input" id="num8" maxlength="3" />
+        </div>
+        <button onclick="processNumbers()">Submit</button>
+    </div>
+
+    <!-- Display Results -->
+    <div id="results">
+
+        <h2>Results:</h2>
+        <div id="number-images"></div>
+
+        <table>
+            <tr>
+                <td><h3 id="max-header" style="display: none;">Maximum:</h3></td>
+                <td><div id="max"></div></td>
+            </tr>
+            <tr>
+                <td><h3 id="min-header" style="display: none;">Minimum:</h3></td>
+                <td><div id="min"></div></td>
+            </tr>
+            <tr>
+                <td><h3 id="median-header" style="display: none;">Median:</h3></td>
+                <td><div id="median"></div></td>
+            </tr>
+        </table>
+        
+
+        <h3>Prime Numbers:</h3>
+        <div id="prime-numbers"></div>
+
+        <h3>Armstrong Numbers:</h3>
+        <div id="armstrong-numbers"></div>
+
+        <h3>Fibonacci Numbers:</h3>
+        <div id="fibonacci-numbers"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
