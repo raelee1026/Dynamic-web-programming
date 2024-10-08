@@ -24,7 +24,7 @@ h1 {
     text-align: center;
     margin: 5px;
     border-radius: 10px; /* 圓角邊框 */
-    border: 2px solid #ff6347; /* 番茄紅邊框 */
+    /* border: 2px solid #ff6347; 番茄紅邊框 */
     transition: border-color 0.3s; /* 動畫效果 */
 }
 
@@ -66,16 +66,16 @@ table:nth-of-type(2) {
 }
 
 tr:nth-child(odd) {
-    background-color: #faf0e6; /* 淺米色底 */
+    background-color: #faf0e6; 
 }
 
 tr:nth-child(even) {
-    background-color: #fffaf0; /* 淺奶油色底 */
+    background-color: #fffaf0; 
 }
 
 td {
     padding: 10px;
-    border: 1px solid #ddd; /* 淺灰色邊框 */
+    border: 1px solid #ddd; 
 }
 
 h3 {

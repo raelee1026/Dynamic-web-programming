@@ -58,23 +58,54 @@ function processNumbers() {
     document.getElementById("prime-header").style.display = "block";
     document.getElementById("armstrong-header").style.display = "block";
     document.getElementById("fibonacci-header").style.display = "block";
+    document.getElementById("results").style.display = "block";
 }
 
 
-function displayImages(num1, num2, num3, num4, num5, num6, num7, num8) {
-    const imageContainer = document.getElementById("number-images");
-    imageContainer.innerHTML = ''; 
+// function displayImages(num1, num2, num3, num4, num5, num6, num7, num8) {
+//     const imageContainer = document.getElementById("number-images");
+//     imageContainer.innerHTML = ''; 
 
-    // to append image for each digit without using arrays
+//     // to append image for each digit without using arrays
+//     function appendImageForNumber(number) {
+//         let numberStr = String(number);
+//         for (let i = 0; i < numberStr.length; i++) {
+//             let digit = numberStr[i];
+//             let img = document.createElement("img");
+//             img.src = `images/${digit}.png`; // number image
+//             imageContainer.appendChild(img);
+//         }
+//         imageContainer.appendChild(document.createElement("br"));
+//     }
+
+//     appendImageForNumber(num1);
+//     appendImageForNumber(num2);
+//     appendImageForNumber(num3);
+//     appendImageForNumber(num4);
+//     appendImageForNumber(num5);
+//     appendImageForNumber(num6);
+//     appendImageForNumber(num7);
+//     appendImageForNumber(num8);
+// }
+
+function displayImages(num1, num2, num3, num4, num5, num6, num7, num8) {
+    const imageRow = document.getElementById("number-images-row"); // add td row
+    imageRow.innerHTML = ''; 
+
     function appendImageForNumber(number) {
         let numberStr = String(number);
+        let cell = document.createElement("td"); // create td
+
         for (let i = 0; i < numberStr.length; i++) {
             let digit = numberStr[i];
             let img = document.createElement("img");
-            img.src = `images/${digit}.png`; // number image
-            imageContainer.appendChild(img);
+            img.src = `images/${digit}.png`; 
+            img.alt = digit;
+
+            cell.appendChild(img);
         }
-        imageContainer.appendChild(document.createElement("br"));
+
+        imageRow.appendChild(cell);
     }
 
     appendImageForNumber(num1);
@@ -86,6 +117,7 @@ function displayImages(num1, num2, num3, num4, num5, num6, num7, num8) {
     appendImageForNumber(num7);
     appendImageForNumber(num8);
 }
+
 
 function displayNumberAsImages(number, container) {
     // from number to img
