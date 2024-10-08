@@ -1,61 +1,65 @@
-/* <!--112550003 李昀祐 第II次作業 10/11 112550003 Yun-Yu, Lee The Second Homework 10/11 --> */
-img {
-    width: 50px;   /* 設定圖片的寬度 */
-    height: 50px;  /* 設定圖片的高度 */
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-#input-section {
-    margin: 20px;
-}
-
-.input-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.number-input {
-    width: 50px;
-    margin: 5px;
-    text-align: center;
-}
-
-#results {
-    margin-top: 20px;
-}
-
-#number-images img {
-    width: 50px;
-    margin: 5px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    padding: 10px;
-    vertical-align: top;
-}
-
-h3 {
     margin: 0;
-    font-size: 16px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
 }
 
-/* div {
-    border: 1px solid #ddd;
-    padding: 5px;
-    min-height: 30px; /* 確保 div 有最小高度 
-} */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 3em; 
+    margin-bottom: 40px; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+}
+
+.box {
+    width: 45%; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; 
+}
+
+.candy-dots {
+    background: linear-gradient(135deg, #ffe4e1, #e6e6fa); 
+    color: #333; 
+}
+
+.midnight-gold {
+    background: linear-gradient(135deg, #333, #111); 
+    color: #ffd700; 
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2.2em; 
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em; 
+}
+
+.box:hover {
+    opacity: 0.85;
+    transform: translateY(-10px); 
+}

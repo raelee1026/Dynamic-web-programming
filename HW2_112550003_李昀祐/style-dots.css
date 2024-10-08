@@ -1,14 +1,14 @@
 /* <!--112550003 李昀祐 第II次作業 10/11 112550003 Yun-Yu, Lee The Second Homework 10/11 --> */
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #f0f8ff; /* 淺藍色背景 */
-    color: #333; /* 深色文字 */
+    background-color: #f0f8ff; 
+    color: #333; 
     text-align: center;
     padding: 20px;
 }
 
 h1 {
-    color: #ff6347; /* 番茄紅 */
+    color: #ff6347; 
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -23,28 +23,29 @@ h1 {
     font-size: 1.5em;
     text-align: center;
     margin: 5px;
-    border-radius: 10px; /* 圓角邊框 */
-    /* border: 2px solid #ff6347; 番茄紅邊框 */
-    transition: border-color 0.3s; /* 動畫效果 */
+    border-radius: 10px; 
+    /* border: 2px solid #ff6347; */
+    transition: border-color 0.3s;
 }
 
 .number-input:focus {
-    border-color: #32cd32; /* 綠色聚焦邊框 */
+    border-color: #32cd32; 
 }
 
 button {
     padding: 10px 20px;
+    margin-top: 20px;
     font-size: 1.5em;
-    border-radius: 10px; /* 圓角邊框 */
+    border-radius: 10px; 
     border: none;
-    background-color: #ff6347; /* 番茄紅 */
+    background-color: #ff6347;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s; /* 動畫效果 */
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #ff4500; /* 橙紅色 */
+    background-color: #ff4500; 
 }
 
 #results {
@@ -54,15 +55,15 @@ button:hover {
 table {
     width: 100%;
     margin: 20px 0;
-    border-collapse: collapse; /* 消除邊框間距 */
+    border-collapse: collapse; 
 }
 
 table:nth-of-type(1) {
-    background-color: #ffe4e1; /* 淺紅色底 */
+    background-color: #ffe4e1; 
 }
 
 table:nth-of-type(2) {
-    background-color: #e6e6fa; /* 淺紫色底 */
+    background-color: #e6e6fa; 
 }
 
 tr:nth-child(odd) {
@@ -83,7 +84,7 @@ h3 {
 }
 
 #number-images img {
-    height: 50px; /* 數字圖片大小 */
+    height: 50px; 
     margin: 2px;
 }
 

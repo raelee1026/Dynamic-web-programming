@@ -260,6 +260,13 @@ function displayPrimes(num1, num2, num3, num4, num5, num6, num7, num8) {
     // if(isPrime(n6)) console.log(n6);
     // if(isPrime(n7)) console.log(n7);
     // if(isPrime(n8)) console.log(n8);
+    if (imageContainer.innerHTML.trim() === '') {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.textContent = "empty";
+        emptyMessage.style.fontSize = "30px"; 
+        emptyMessage.style.color = "#ff6347"; 
+        imageContainer.appendChild(emptyMessage);
+    }
 
 }
 
@@ -342,6 +349,15 @@ function displayArmstrong(num1, num2, num3, num4, num5, num6, num7, num8) {
     // if(isArmstrong(n7)) console.log(n7);
     // if(isArmstrong(n8)) console.log(n8);
 
+    if (imageContainer.innerHTML.trim() === '') {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.textContent = "empty";
+        emptyMessage.style.fontSize = "30px"; 
+        emptyMessage.style.color = "#ff6347"; 
+        imageContainer.appendChild(emptyMessage);
+    }
+    
+
 }
 
 // check is fibonacci
@@ -414,5 +430,13 @@ function displayFibonacci(num1, num2, num3, num4, num5, num6, num7, num8) {
     // if(isFibonacci(n6)) console.log(n6);
     // if(isFibonacci(n7)) console.log(n7);
     // if(isFibonacci(n8)) console.log(n8);
+
+    if (imageContainer.innerHTML.trim() === '') {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.textContent = "empty";
+        emptyMessage.style.fontSize = "30px"; 
+        emptyMessage.style.color = "#ff6347"; 
+        imageContainer.appendChild(emptyMessage);
+    }
 
 }

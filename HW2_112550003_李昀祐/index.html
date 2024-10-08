@@ -1,79 +1,22 @@
-<!--112550003 李昀祐 第II次作業 10/11 112550003 Yun-Yu, Lee The Second Homework 10/11 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW2_112550003_李昀祐</title>
-    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Homework 2</h1>
-
-    <!-- Input Section -->
-    <div id="input-section">
-        <label>Enter 8 numbers:</label>
-        <div class="input-row">
-            <input type="text" class="number-input" id="num1" maxlength="3" />
-            <input type="text" class="number-input" id="num2" maxlength="3" />
-            <input type="text" class="number-input" id="num3" maxlength="3" />
-            <input type="text" class="number-input" id="num4" maxlength="3" />
-            <input type="text" class="number-input" id="num5" maxlength="3" />
-            <input type="text" class="number-input" id="num6" maxlength="3" />
-            <input type="text" class="number-input" id="num7" maxlength="3" />
-            <input type="text" class="number-input" id="num8" maxlength="3" />
-        </div>
-        <button onclick="processNumbers()">Submit</button>
+    <h1>Number Toolbox</h1>
+    <div class="container">
+        <a href="dots.html" class="box candy-dots">
+            <h2>Candy Dots</h2>
+            <p>Welcome to the Candy Dots style! Enjoy the playful and colorful numbers.</p>
+        </a>
+        <a href="gold.html" class="box midnight-gold">
+            <h2>Midnight Gold</h2>
+            <p>Welcome to the Midnight Gold style! Experience elegance with dark backgrounds and golden accents.</p>
+        </a>
     </div>
-
-    <!-- Display Results -->
-    <div id="results" style="display: none;">
-
-        <!-- <h2>Results:</h2>
-        <div id="number-images"></div> -->
-
-        <table id="number-images-table">
-            <tr>
-                <td colspan="8"><h2>Numbers you entered:</h2></td>
-            </tr>
-            <tr id="number-images-row"></tr> 
-        </table>
-        
-
-
-        <table>
-            <tr>
-                <td width="20%"><h3 id="max-header" style="display: none;">Maximum:</h3></td>
-                <td><div id="max"></div></td>
-            </tr>
-            <tr>
-                <td><h3 id="min-header" style="display: none;">Minimum:</h3></td>
-                <td><div id="min"></div></td>
-            </tr>
-            <tr>
-                <td><h3 id="median-header" style="display: none;">Median:</h3></td>
-                <td><div id="median"></div></td>
-            </tr>
-        </table>
-        
-
-        <table>
-            <tr>
-                <td width="20%"><h3 id="prime-header" style="display: none;">Prime Numbers:</h3></td>
-                <td><div id="prime-numbers"></div></td>
-            </tr>
-            <tr>
-                <td><h3 id="armstrong-header" style="display: none;">Armstrong Numbers:</h3></td>
-                <td><div id="armstrong-numbers"></div></td>
-            </tr>
-            <tr>
-                <td><h3 id="fibonacci-header" style="display: none;">Fibonacci Numbers:</h3></td>
-                <td><div id="fibonacci-numbers"></div></td>
-            </tr>
-        </table>
-        
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
