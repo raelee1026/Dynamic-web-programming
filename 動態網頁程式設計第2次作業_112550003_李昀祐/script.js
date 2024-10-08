@@ -1,4 +1,4 @@
-// Function to process and display the numbers without using arrays
+/* <!--112550003 李昀祐 第II次作業 10/11 112550003 Yun-Yu, Lee The Second Homework 10/11 --> */
 function processNumbers() {
 
     const inputs = [
@@ -55,6 +55,9 @@ function processNumbers() {
     document.getElementById("max-header").style.display = "block";
     document.getElementById("min-header").style.display = "block";
     document.getElementById("median-header").style.display = "block";
+    document.getElementById("prime-header").style.display = "block";
+    document.getElementById("armstrong-header").style.display = "block";
+    document.getElementById("fibonacci-header").style.display = "block";
 }
 
 
@@ -93,8 +96,11 @@ function displayNumberAsImages(number, container) {
         let digit = numberStr[i];
 
         if (digit === '.') {
-            let textNode = document.createTextNode('.'); // decimal point
-            container.appendChild(textNode); 
+            // let textNode = document.createTextNode('.'); // decimal point
+            // container.appendChild(textNode); 
+            let img = document.createElement("img");
+            img.src = `images/decimal-point.png`; // number image
+            container.appendChild(img); 
         } else {
             let img = document.createElement("img");
             img.src = `images/${digit}.png`; // number image

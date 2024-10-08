@@ -1,10 +1,11 @@
+<!--112550003 李昀祐 第一次作業 9/26 112550003 Yun-Yu, Lee The First Homework 9/26 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW2_112550003_李昀祐</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
 </head>
 <body>
     <h1>Homework 2 - Number Visualization</h1>
@@ -33,7 +34,7 @@
 
         <table>
             <tr>
-                <td><h3 id="max-header" style="display: none;">Maximum:</h3></td>
+                <td width="20%"><h3 id="max-header" style="display: none;">Maximum:</h3></td>
                 <td><div id="max"></div></td>
             </tr>
             <tr>
@@ -47,14 +48,21 @@
         </table>
         
 
-        <h3>Prime Numbers:</h3>
-        <div id="prime-numbers"></div>
-
-        <h3>Armstrong Numbers:</h3>
-        <div id="armstrong-numbers"></div>
-
-        <h3>Fibonacci Numbers:</h3>
-        <div id="fibonacci-numbers"></div>
+        <table>
+            <tr>
+                <td width="20%"><h3 id="prime-header" style="display: none;">Prime Numbers:</h3></td>
+                <td><div id="prime-numbers"></div></td>
+            </tr>
+            <tr>
+                <td><h3 id="armstrong-header" style="display: none;">Armstrong Numbers:</h3></td>
+                <td><div id="armstrong-numbers"></div></td>
+            </tr>
+            <tr>
+                <td><h3 id="fibonacci-header" style="display: none;">Fibonacci Numbers:</h3></td>
+                <td><div id="fibonacci-numbers"></div></td>
+            </tr>
+        </table>
+        
     </div>
 
     <script src="script.js"></script>
