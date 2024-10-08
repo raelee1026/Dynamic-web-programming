@@ -312,23 +312,20 @@ function displayArmstrong(num1, num2, num3, num4, num5, num6, num7, num8) {
 
 }
 
-
-// Check if a number is Fibonacci
+// check is fibonacci
 function isFibonacci(num) {
-    // 判斷一個數字是否為完全平方數的內部函數
     function isPerfectSquare(num) {
         let sqrt = Math.sqrt(num);
         return sqrt === Math.floor(sqrt);
     }
 
-    // 檢查 5n^2 + 4 和 5n^2 - 4 是否為完全平方數
+    // check 5n^2 + 4 or 5n^2 - 4
     let check1 = 5 * num * num + 4;
     let check2 = 5 * num * num - 4;
 
     return isPerfectSquare(check1) || isPerfectSquare(check2);
 }
 
-// Display Fibonacci numbers (manually checking each number)
 function displayFibonacci(num1, num2, num3, num4, num5, num6, num7, num8) {
     let n1 = num1, n2 = num2, n3 = num3, n4 = num4;
     let n5 = num5, n6 = num6, n7 = num7, n8 = num8;
