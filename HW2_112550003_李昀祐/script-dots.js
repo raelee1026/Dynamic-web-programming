@@ -1,48 +1,57 @@
 /* <!--112550003 李昀祐 第II次作業 10/11 112550003 Yun-Yu, Lee The Second Homework 10/11 --> */
 function processNumbers() {
-
-    const inputs = [
-        document.getElementById("num1"),
-        document.getElementById("num2"),
-        document.getElementById("num3"),
-        document.getElementById("num4"),
-        document.getElementById("num5"),
-        document.getElementById("num6"),
-        document.getElementById("num7"),
-        document.getElementById("num8")
-    ];
+    const num1Input = document.getElementById("num1");
+    const num2Input = document.getElementById("num2");
+    const num3Input = document.getElementById("num3");
+    const num4Input = document.getElementById("num4");
+    const num5Input = document.getElementById("num5");
+    const num6Input = document.getElementById("num6");
+    const num7Input = document.getElementById("num7");
+    const num8Input = document.getElementById("num8");
 
     let isValid = true;
 
-    
-    inputs.forEach(input => {
-        input.style.border = ""; // reset
-    });
+    num1Input.style.border = "";
+    num2Input.style.border = "";
+    num3Input.style.border = "";
+    num4Input.style.border = "";
+    num5Input.style.border = "";
+    num6Input.style.border = "";
+    num7Input.style.border = "";
+    num8Input.style.border = "";
 
-    // check 1~999
-    inputs.forEach(input => {
-        const value = input.value.trim(); // space
+    function validateInput(input) {
+        const value = input.value.trim();
         const parsedValue = parseInt(value, 10);
 
         if (!/^\d+$/.test(value) || parsedValue < 1 || parsedValue > 999) {
-            input.style.border = "2px solid red"; // invalid number red border
+            input.style.border = "2px solid red"; 
             isValid = false;
         }
-    });
+    }
+
+    validateInput(num1Input);
+    validateInput(num2Input);
+    validateInput(num3Input);
+    validateInput(num4Input);
+    validateInput(num5Input);
+    validateInput(num6Input);
+    validateInput(num7Input);
+    validateInput(num8Input);
 
     if (!isValid) {
         alert("Please enter valid integers between 1 and 999 in all fields.");
         return;
     }
 
-    const num1 = parseInt(document.getElementById("num1").value, 10);
-    const num2 = parseInt(document.getElementById("num2").value, 10);
-    const num3 = parseInt(document.getElementById("num3").value, 10);
-    const num4 = parseInt(document.getElementById("num4").value, 10);
-    const num5 = parseInt(document.getElementById("num5").value, 10);
-    const num6 = parseInt(document.getElementById("num6").value, 10);
-    const num7 = parseInt(document.getElementById("num7").value, 10);
-    const num8 = parseInt(document.getElementById("num8").value, 10);
+    const num1 = parseInt(num1Input.value, 10);
+    const num2 = parseInt(num2Input.value, 10);
+    const num3 = parseInt(num3Input.value, 10);
+    const num4 = parseInt(num4Input.value, 10);
+    const num5 = parseInt(num5Input.value, 10);
+    const num6 = parseInt(num6Input.value, 10);
+    const num7 = parseInt(num7Input.value, 10);
+    const num8 = parseInt(num8Input.value, 10);
 
     displayImages(num1, num2, num3, num4, num5, num6, num7, num8);
     displayMax(num1, num2, num3, num4, num5, num6, num7, num8);
@@ -60,6 +69,7 @@ function processNumbers() {
     document.getElementById("fibonacci-header").style.display = "block";
     document.getElementById("results").style.display = "block";
 }
+
 
 
 // function displayImages(num1, num2, num3, num4, num5, num6, num7, num8) {
