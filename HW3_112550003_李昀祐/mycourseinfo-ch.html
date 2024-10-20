@@ -1,4 +1,4 @@
-<!--112550003 李昀祐 第一次作業 9/26 112550003 Yun-Yu, Lee The First Homework 9/26 -->
+<!--112550003 李昀祐 第三次作業 1/11 112550003 Yun-Yu, Lee The Third Homework 1/11 -->
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -265,6 +265,33 @@
 
 
     </main>
+
+    <!-- Popup Section -->
+    <div class="dark-background" id="dark-background"></div>
+    <div class="popup" id="popup">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2>歡迎光臨！</h2>
+        <p>這是彈出視窗的內容，請點擊右上角關閉。</p>
+    </div>
+
+    <!-- <script>
+        // Show popup after page load
+        window.onload = function() {
+            document.getElementById('popup').classList.add('active');
+            document.getElementById('dark-background').classList.add('active');
+            document.body.classList.add('unscrollable');
+            
+        };
+
+        // Close popup functionality
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('popup').classList.remove('active');
+            document.getElementById('dark-background').classList.remove('active');
+            document.body.classList.remove('unscrollable');
+        });
+    </script> -->
+
+    <script src="mycourseinfo.js"></script>
 
     <footer>
         <p>Copyright © 2024 李昀祐 All Rights Reserved. </p>
